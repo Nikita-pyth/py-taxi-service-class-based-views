@@ -10,7 +10,6 @@
           <th>ID</th>
           <th>Manufacturer</th>
           <th>Model</th>
-          <th>Year</th>
         </tr>
       </thead>
       <tbody>
@@ -19,7 +18,6 @@
             <td><a href="{% url 'taxi:car-detail' car.id %}">{{ car.id }}</a></td>
             <td>{{ car.manufacturer.name }}</td>
             <td>{{ car.model }}</td>
-            <td>{{ car.year }}</td>
           </tr>
         {% endfor %}
       </tbody>
